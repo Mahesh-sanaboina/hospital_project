@@ -3,902 +3,851 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Medilux Care Hospital - Premium Healthcare, IVF & Fertility treatment, Advanced Cardiology, Pediatrics and Orthopedics. Trusted Care. Advanced Healing.">
-  <title>Medilux Care Hospital | Premium & Advanced Healthcare Center</title>
-  
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Stylesheet -->
+  <meta name="description" content="Kimaya Gynec and Fertility Center – Premium Gynec, Women Care & IVF Center. Trusted Care. Advanced Healing. NABH Certified, 1 Lakh+ Successful Treatments, Expert Doctors.">
+  <meta name="keywords" content="Kimaya, hospital, gynecologist, IVF, fertility, pregnancy, women care, advanced care, NABH">
+  <title>Kimaya Gynec and Fertility Center | Premium Women Care & IVF Excellence</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- --- Sticky Transparent Navbar --- -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
+<!-- ════════════════════════════════════════════
+     LOADING SCREEN
+════════════════════════════════════════════ -->
+<div id="loader">
+  <div class="loader-logo"><img src="assets/images/logo.svg" alt="Kimaya Logo"></div>
+  <div class="loader-bar-wrap"><div class="loader-bar" id="loader-bar"></div></div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     1. NAVBAR
+════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+
       <!-- Logo -->
-      <a href="#" class="logo" id="nav-logo">
-        <div class="logo-icon">M</div>
-        <div class="logo-text">MediLux<span>Care</span></div>
+      <a href="#" class="nav-logo" id="site-logo">
+        <img src="assets/images/logo_short.svg" alt="Kimaya Logo" class="nav-logo-img">
       </a>
 
-      <!-- Navigation Links -->
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="#about" class="nav-link">About Us</a></li>
+      <!-- Center Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about-section" class="nav-link">About Us</a></li>
         <li><a href="#departments" class="nav-link">Departments</a></li>
-        <li><a href="#doctors" class="nav-link">Find Doctor</a></li>
-        <li><a href="#stats" class="nav-link">Find Hospital</a></li>
-        <li><a href="#packages" class="nav-link">Health Packages</a></li>
+        <li><a href="#doctors" class="nav-link">Find Doctors</a></li>
         <li><a href="#stories" class="nav-link">Patient Stories</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
-      <!-- Navbar Action buttons -->
+      <!-- Actions -->
       <div class="nav-actions">
-        <a href="tel:+1800555999" class="nav-cta-emergency">
-          <i class="fa-solid fa-phone-flip"></i> Emergency
+        <a href="tel:+18001800999" class="nav-emergency" id="nav-emerg">
+          <i class="fa-solid fa-circle-dot"></i> Emergency 24/7
         </a>
-        <button class="btn btn-secondary nav-cta-packages" onclick="document.getElementById('packages').scrollIntoView({behavior: 'smooth'})">Health Packages</button>
-        <button class="btn btn-primary nav-cta-booking" id="open-booking-btn">Book Appointment</button>
-        
-        <button class="search-btn" id="open-search-btn" aria-label="Open Search">
+        <button class="btn btn-glass btn-sm nav-book" id="nav-book-btn">
+          <i class="fa-regular fa-calendar-check"></i> Book Appointment
+        </button>
+        <button class="nav-search" id="nav-search-btn" aria-label="Search">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
-
-        <!-- Mobile Hamburger Menu -->
-        <div class="menu-toggle" id="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="mobile-toggle" id="mobile-toggle">
+          <span></span><span></span><span></span>
         </div>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- --- Cinematic Hero Banner Section --- -->
-  <header class="hero-section" id="about">
-    <div class="hero-glow-1"></div>
-    <div class="hero-glow-2"></div>
-    <div class="container">
-      <div class="hero-grid">
-        <!-- Left Column: Copy -->
-        <div class="hero-content reveal active">
-          <div class="hero-tag">
-            <i class="fa-solid fa-award"></i>
-            <span>#1 Luxury Healthcare Destination</span>
+<!-- ════════════════════════════════════════════
+     2. HERO SECTION
+════════════════════════════════════════════ -->
+<section id="hero">
+  <!-- Background -->
+  <div class="hero-bg">
+    <img src="assets/images/hero_bg.png" alt="Kimaya Gynec and Fertility Center Environment" class="hero-bg-img">
+    <div class="hero-overlay"></div>
+    <div class="hero-mesh"></div>
+  </div>
+
+  <!-- Animated Particles -->
+  <div class="particle-field" id="particle-field"></div>
+
+  <div class="container hero-container">
+    <div class="hero-grid">
+
+      <!-- LEFT: Content -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          NABH Certified • #1 Advanced Care Hospital
+        </div>
+
+        <h1 class="hero-title">
+          Trusted Care.<br>
+          <span class="accent" style="background: linear-gradient(90deg,#93c5fd,#f0abfc); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">Advanced Healing.</span>
+        </h1>
+
+        <p class="hero-sub">
+          Providing world-class healthcare solutions with advanced technology, expert doctors, and compassionate patient care tailored to every individual's journey.
+        </p>
+
+        <div class="hero-trust">
+          <div class="trust-chip"><i class="fa-solid fa-star"></i> 24/7 Emergency</div>
+          <div class="trust-chip"><i class="fa-solid fa-star"></i> Multi-Speciality</div>
+          <div class="trust-chip"><i class="fa-solid fa-star"></i> NABH Certified</div>
+          <div class="trust-chip"><i class="fa-solid fa-star"></i> ISO 9001:2015</div>
+        </div>
+
+        <div class="hero-ctas">
+          <button class="btn btn-primary btn-lg" id="hero-book-btn">
+            <i class="fa-regular fa-calendar-check"></i> Book Appointment
+          </button>
+          <a href="#departments" class="btn btn-glass btn-lg">
+            Explore Departments <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="hero-stat-strip">
+          <div class="hero-stat-item">
+            <div class="hero-stat-num">1L+</div>
+            <div class="hero-stat-lbl">Patients Treated</div>
           </div>
-          <h1 class="hero-title">
-            Trusted Care.<br>
-            <span class="text-gradient-blue-pink">Advanced Healing.</span>
-          </h1>
-          <p class="hero-desc">
-            Delivering world-class healthcare with compassionate doctors, modern technology, and thousands of successful treatments. Experience healing defined by luxury and premium clinical expertise.
-          </p>
-          <div class="hero-actions">
-            <button class="btn btn-primary" id="hero-book-btn">
+          <div class="hero-stat-item">
+            <div class="hero-stat-num">250+</div>
+            <div class="hero-stat-lbl">Expert Doctors</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-num">50+</div>
+            <div class="hero-stat-lbl">Departments</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-num">98%</div>
+            <div class="hero-stat-lbl">Success Rate</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Achievement Card -->
+      <div class="hero-card-wrap">
+        <!-- Floating mini badge top-left -->
+        <div class="float-card float-card-1">
+          <div class="float-card-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <div>
+            <div style="font-size:.7rem;opacity:.7;font-weight:500;">Live Monitoring</div>
+            <div>Cardiac ICU Active</div>
+          </div>
+        </div>
+
+        <div class="hero-achievement-card glass-card-dark">
+          <div class="achievement-icon">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <div style="font-size:.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:.6rem;">Celebrating</div>
+          <div class="achievement-number">1 LAKH+</div>
+          <div class="achievement-label">Happy Patients</div>
+          <div class="achievement-sub">Across India & International</div>
+
+          <div style="margin-top:2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:1rem;text-align:center;">
+            <div style="background:rgba(255,255,255,.06);border-radius:16px;padding:1rem .8rem;">
+              <div style="font-family:'Outfit',sans-serif;font-size:1.6rem;font-weight:900;background:linear-gradient(135deg,#93c5fd,#f0abfc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">85%+</div>
+              <div style="font-size:.7rem;color:rgba(255,255,255,.5);margin-top:.3rem;font-weight:600;">IVF Success Rate</div>
+            </div>
+            <div style="background:rgba(255,255,255,.06);border-radius:16px;padding:1rem .8rem;">
+              <div style="font-family:'Outfit',sans-serif;font-size:1.6rem;font-weight:900;background:linear-gradient(135deg,#34d399,#22c55e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">24/7</div>
+              <div style="font-size:.7rem;color:rgba(255,255,255,.5);margin-top:.3rem;font-weight:600;">Emergency Care</div>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" style="width:100%;margin-top:2rem;" onclick="openBooking()">
+            <i class="fa-regular fa-calendar-check"></i> Book Consultation
+          </button>
+        </div>
+
+        <!-- Floating mini badge bottom-right -->
+        <div class="float-card float-card-2">
+          <div class="float-card-icon" style="background:linear-gradient(135deg,#22c55e,#16a34a)"><i class="fa-solid fa-baby"></i></div>
+          <div>
+            <div style="font-size:.7rem;opacity:.7;font-weight:500;">This Month</div>
+            <div>48 IVF Successes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Cue -->
+  <div class="hero-scroll">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     4. WHY CHOOSE US
+════════════════════════════════════════════ -->
+<section id="why" class="section-py" style="background:#fff;">
+  <div class="container">
+    <div class="sec-header reveal">
+      <span class="sec-eyebrow"><i class="fa-solid fa-shield-heart"></i> Why Kimaya</span>
+      <h2 class="sec-title">Setting Global Standards in <span class="grad-text">Premium Healthcare</span></h2>
+      <p class="sec-desc">We combine luxury hospitality with clinical precision — because your healing journey deserves nothing less than extraordinary.</p>
+    </div>
+    <div class="why-grid" id="about-section">
+      <div class="why-card reveal">
+        <div class="why-icon-wrap"><i class="fa-solid fa-robot why-icon"></i></div>
+        <h3>Advanced AI Technology</h3>
+        <p>AI-assisted diagnostics, robotic surgery systems, and real-time patient monitoring through cutting-edge medical technology platforms.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon-wrap"><i class="fa-solid fa-user-doctor why-icon"></i></div>
+        <h3>World-Renowned Specialists</h3>
+        <p>Over 250 globally trained specialists across 50+ departments, including IVF, cardiology, neurology, oncology, and robotic surgery.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon-wrap"><i class="fa-solid fa-flask-vial why-icon"></i></div>
+        <h3>Modern Certified Laboratories</h3>
+        <p>CAP & NABL-accredited labs with same-day reporting. IVF embryology labs with 85%+ success rates using genetic screening.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-3">
+        <div class="why-icon-wrap"><i class="fa-solid fa-truck-medical why-icon"></i></div>
+        <h3>24/7 Emergency Response</h3>
+        <p>Rapid-response mobile ICU ambulances, trauma centres, and cardiac catheterization labs open every hour of every day.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-4">
+        <div class="why-icon-wrap"><i class="fa-solid fa-heart-circle-check why-icon"></i></div>
+        <h3>Personalized Care Plans</h3>
+        <p>Every patient receives a tailored care journey — from diagnosis to recovery — managed by a dedicated clinical case team.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-5">
+        <div class="why-icon-wrap"><i class="fa-solid fa-award why-icon"></i></div>
+        <h3>Trusted by 1 Lakh+ Patients</h3>
+        <p>NABH & ISO 9001:2015 certified with a 98% patient satisfaction rate and consistent national awards for clinical excellence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     5. DEPARTMENTS
+════════════════════════════════════════════ -->
+<section id="departments" class="section-py">
+  <div class="container">
+    <div class="sec-header reveal">
+      <span class="sec-eyebrow"><i class="fa-solid fa-stethoscope"></i> Our Specialities</span>
+      <h2 class="sec-title">Centers of Excellence for <span class="grad-text-pink">Multi-Speciality Care</span></h2>
+      <p class="sec-desc">World-class treatment across every medical frontier — from fertility to oncology, neurology to emergency trauma.</p>
+    </div>
+    <div class="dept-grid">
+
+      <div class="dept-card reveal" style="cursor:pointer;" onclick="openBooking('','Cardiology')">
+        <div class="dept-card-glow"></div>
+        <div class="dept-icon-ring"><i class="fa-solid fa-heart-pulse dept-icon"></i></div>
+        <h3>Cardiology</h3>
+        <p>Advanced cardiac interventions, primary angioplasty, TAVR, and 24/7 cardiac ICU with dedicated cardiologists.</p>
+        <div class="dept-link">Explore Department <i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+      <div class="dept-card reveal reveal-delay-1" style="cursor:pointer;" onclick="openBooking('','Neurology')">
+        <div class="dept-card-glow"></div>
+        <div class="dept-icon-ring"><i class="fa-solid fa-brain dept-icon"></i></div>
+        <h3>Neurology</h3>
+        <p>Stroke management, CyberKnife radiosurgery, neuro-navigation, and comprehensive epilepsy programs.</p>
+        <div class="dept-link">Explore Department <i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+      <div class="dept-card reveal reveal-delay-2" style="cursor:pointer;" onclick="openBooking('','Orthopedics')">
+        <div class="dept-card-glow"></div>
+        <div class="dept-icon-ring"><i class="fa-solid fa-bone dept-icon"></i></div>
+        <h3>Orthopedics</h3>
+        <p>Robotic Mako joint replacement, arthroscopy, sports medicine, and accelerated rehabilitation programs.</p>
+        <div class="dept-link">Explore Department <i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+      <div class="dept-card reveal reveal-delay-3" style="cursor:pointer;" onclick="openBooking('','Pediatrics')">
+        <div class="dept-card-glow"></div>
+        <div class="dept-icon-ring"><i class="fa-solid fa-children dept-icon"></i></div>
+        <h3>Pediatrics</h3>
+        <p>Level-IV NICU, pediatric surgery, child development clinics, and a child-friendly hospital environment.</p>
+        <div class="dept-link">Explore Department <i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+      <div class="dept-card reveal reveal-delay-1" style="cursor:pointer;" onclick="openBooking('','Oncology')">
+        <div class="dept-card-glow"></div>
+        <div class="dept-icon-ring"><i class="fa-solid fa-ribbon dept-icon"></i></div>
+        <h3>Oncology</h3>
+        <p>Linear accelerator radiotherapy, targeted chemotherapy, immunotherapy, and comprehensive cancer support.</p>
+        <div class="dept-link">Explore Department <i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+      <div class="dept-card reveal reveal-delay-2" style="cursor:pointer;" onclick="openBooking('','IVF & Fertility')">
+        <div class="dept-card-glow"></div>
+        <div class="dept-icon-ring"><i class="fa-solid fa-baby dept-icon"></i></div>
+        <h3>IVF & Fertility</h3>
+        <p>85%+ success IVF cycles, ICSI, PGT genetic screening, egg freezing, and advanced embryology labs.</p>
+        <div class="dept-link">Explore Department <i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+      <div class="dept-card reveal reveal-delay-3" style="cursor:pointer;" onclick="openBooking('','Emergency')">
+        <div class="dept-card-glow"></div>
+        <div class="dept-icon-ring"><i class="fa-solid fa-kit-medical dept-icon"></i></div>
+        <h3>Emergency Care</h3>
+        <p>Trauma Level I centre, 10-min ambulance response, cardiac & stroke emergency protocols active 24/7.</p>
+        <div class="dept-link">Explore Department <i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+      <div class="dept-card reveal reveal-delay-4" style="cursor:pointer;" onclick="openBooking('','Radiology')">
+        <div class="dept-card-glow"></div>
+        <div class="dept-icon-ring"><i class="fa-solid fa-x-ray dept-icon"></i></div>
+        <h3>Radiology</h3>
+        <p>3T MRI, 128-slice CT, PET-CT, digital mammography, and interventional radiology procedures.</p>
+        <div class="dept-link">Explore Department <i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     6. DOCTORS
+════════════════════════════════════════════ -->
+<section id="doctors" class="section-py" style="background:#fff;">
+  <div class="container">
+    <div class="sec-header reveal">
+      <span class="sec-eyebrow"><i class="fa-solid fa-user-doctor"></i> Expert Faculty</span>
+      <h2 class="sec-title">Meet Our World-Class <span class="grad-text">Specialist Doctors</span></h2>
+      <p class="sec-desc">Trained at India's and the world's top institutions — our doctors bring clinical brilliance and compassionate bedside manner.</p>
+    </div>
+    <div class="doctors-scroll-wrap reveal">
+      <div class="doctors-track">
+
+        <div class="doctor-card">
+          <div class="doctor-img-box">
+            <img src="assets/images/doctor_1.png" alt="Dr. Alexander Vance" class="doctor-img">
+            <div class="doctor-dept-tag">Cardiology</div>
+            <div class="doctor-social-row">
+              <a class="doc-social" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a class="doc-social" href="#"><i class="fa-solid fa-envelope"></i></a>
+              <a class="doc-social" href="#"><i class="fa-solid fa-phone"></i></a>
+            </div>
+          </div>
+          <div class="doctor-body">
+            <div class="doctor-name">Dr. Alexander Vance</div>
+            <div class="doctor-spec">Senior Interventional Cardiologist</div>
+            <div class="doctor-exp"><i class="fa-solid fa-briefcase-medical" style="color:var(--blue-400)"></i> 18+ Years Experience</div>
+            <div class="doctor-rating">
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <span class="rating-num">4.9 (320 reviews)</span>
+            </div>
+            <button class="btn btn-primary btn-sm btn-full" onclick="openBooking('Dr. Alexander Vance','Cardiology')">
               <i class="fa-regular fa-calendar-check"></i> Book Consultation
             </button>
-            <a href="#departments" class="btn btn-secondary">
-              Explore Specialities <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-          <div class="hero-bullets">
-            <div class="hero-bullet-item">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>24/7 Emergency</span>
-            </div>
-            <div class="hero-bullet-item">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Multi-Speciality Care</span>
-            </div>
-            <div class="hero-bullet-item">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Trusted by 1 Lakh+ Patients</span>
-            </div>
           </div>
         </div>
 
-        <!-- Right Column: Visuals & floating elements -->
-        <div class="hero-visual reveal active">
-          <div class="floating-circle circle-1"></div>
-          
-          <!-- Floating medical icons -->
-          <div class="floating-icon-wrapper f-icon-1">
-            <i class="fa-solid fa-heart-pulse"></i>
-          </div>
-          <div class="floating-icon-wrapper f-icon-2">
-            <i class="fa-solid fa-baby"></i>
-          </div>
-          
-          <!-- Glowing Particles container -->
-          <div class="glowing-particle-emitter" id="particle-container"></div>
-
-          <div class="hero-image-wrapper">
-            <img src="assets/images/hero_bg.png" alt="Medilux Care Premium Clinic Environment" class="hero-image">
-          </div>
-
-          <!-- Achievement Badge -->
-          <div class="achievement-badge glass-card">
-            <span class="badge-num">1 LAKH+</span>
-            <span class="badge-lbl">Successful Treatments</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- --- Emergency Quick Access Bar --- -->
-  <section class="emergency-quick-bar">
-    <div class="container">
-      <div class="emergency-bar-grid">
-        <div class="emergency-info">
-          <div class="emergency-icon-glow">
-            <i class="fa-solid fa-truck-medical"></i>
-          </div>
-          <div>
-            <h3 class="emergency-title">Trauma & Emergency Care Center</h3>
-            <p class="emergency-desc">Immediate cardiac ambulance, ICU, and surgical backup available 24/7.</p>
-          </div>
-        </div>
-        <div class="emergency-actions-list">
-          <div class="emergency-phone">
-            <span>Helpline:</span>
-            <a href="tel:+1800555999"><i class="fa-solid fa-phone"></i> 1800-555-999</a>
-          </div>
-          <button class="btn btn-pink" id="emergency-modal-btn">Request Ambulance</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- --- Why Choose Us Section --- -->
-  <section class="why-choose-section section-padding">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-badge">Why Medilux</span>
-        <h2 class="section-title">Setting New Standards In <span class="text-gradient-purple-pink">Advanced Medicine</span></h2>
-        <p class="section-desc">Combining luxury hospital hospitality with cutting-edge diagnostics, advanced operation theatres, and IVF laboratories.</p>
-      </div>
-
-      <div class="why-grid">
-        <!-- Card 1 -->
-        <div class="why-card glass-card reveal">
-          <div class="why-icon-box">
-            <i class="fa-solid fa-microscope"></i>
-          </div>
-          <h3>Next-Gen Embryology & Labs</h3>
-          <p>Equipped with state-of-the-art IVF incubation systems, genetic screening tools, and high-precision clinical pathology labs to maximize treatment success rates.</p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="why-card glass-card reveal">
-          <div class="why-icon-box">
-            <i class="fa-solid fa-user-doctor"></i>
-          </div>
-          <h3>Renowned Medical Directors</h3>
-          <p>Our specialists are recognized global leaders in reproductive medicine, invasive cardiology, and neonatology with over two decades of clinical experience.</p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="why-card glass-card reveal">
-          <div class="why-icon-box">
-            <i class="fa-solid fa-spa"></i>
-          </div>
-          <h3>Healing Suite Hospitality</h3>
-          <p>We redefine patient stays. Modern clinical suites, customized gourmet recovery meals, and tranquil personal lounges designed to promote emotional well-being.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- --- Our Departments Section --- -->
-  <section class="departments-section section-padding" id="departments">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-badge">Our Specialities</span>
-        <h2 class="section-title">Center of Excellence for <span class="text-gradient-blue-pink">Multi-Speciality Healthcare</span></h2>
-        <p class="section-desc">Dedicated institutes offering comprehensive clinical care, breakthrough clinical trials, and customized patient journeys.</p>
-      </div>
-
-      <!-- Department Tabs -->
-      <div class="dept-tabs reveal">
-        <button class="dept-tab-btn active" data-tab="ivf">
-          <i class="fa-solid fa-baby-carriage"></i> IVF & Fertility
-        </button>
-        <button class="dept-tab-btn" data-tab="cardio">
-          <i class="fa-solid fa-heart-pulse"></i> Cardiology
-        </button>
-        <button class="dept-tab-btn" data-tab="peds">
-          <i class="fa-solid fa-children"></i> Pediatrics
-        </button>
-        <button class="dept-tab-btn" data-tab="neuro">
-          <i class="fa-solid fa-brain"></i> Neurology
-        </button>
-        <button class="dept-tab-btn" data-tab="ortho">
-          <i class="fa-solid fa-bone"></i> Orthopedics
-        </button>
-      </div>
-
-      <!-- Tab Content Panels -->
-      <!-- IVF Panel -->
-      <div class="dept-content-panel active" id="dept-ivf">
-        <div class="dept-info">
-          <h3>Advanced IVF & Reproductive Genetics</h3>
-          <p>Embark on your journey to parenthood with confidence. Our fertility wing has achieved world-class success rates, utilizing AI-assisted embryo selection, Preimplantation Genetic Testing (PGT), and personalized ovulation stimulation protocols.</p>
-          <div class="dept-features">
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> ICSI & IMSI Embryo Transfer</div>
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> Egg & Sperm Cryopreservation</div>
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> Advanced Laser Assisted Hatching</div>
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> 85%+ Successful IVF Cycle Rates</div>
-          </div>
-          <button class="btn btn-primary booking-dept-btn" data-speciality="IVF & Fertility">Consult Fertility Expert</button>
-        </div>
-        <div class="dept-visual">
-          <svg class="dept-visual-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="40" fill="url(#pink-grad)" opacity="0.15"/>
-            <circle cx="50" cy="50" r="28" stroke="url(#pink-grad)" stroke-width="2" stroke-dasharray="4 4"/>
-            <circle cx="50" cy="50" r="16" fill="url(#pink-grad)" opacity="0.3"/>
-            <path d="M50 42C47.8 42 46 43.8 46 46C46 49.5 50 54 50 54C50 54 54 49.5 54 46C54 43.8 52.2 42 50 42Z" fill="#ec4899"/>
-            <circle cx="50" cy="46" r="1.5" fill="white"/>
-            <defs>
-              <linearGradient id="pink-grad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#ec4899"/>
-                <stop offset="1" stop-color="#8b5cf6"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-      </div>
-
-      <!-- Cardio Panel -->
-      <div class="dept-content-panel" id="dept-cardio">
-        <div class="dept-info">
-          <h3>Cardiology & Cardiothoracic Surgery</h3>
-          <p>Delivering prompt, emergency, and surgical heart care. Our cardiology institute is equipped with state-of-the-art hybrid Catheterization Labs and offers minimally invasive robotic cardiac procedures, beating heart surgery, and comprehensive coronary angioplasty.</p>
-          <div class="dept-features">
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> 24/7 Primary Angioplasty (PCI)</div>
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> Robotic Heart Surgery Wing</div>
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> Transcatheter Aortic Valve (TAVR)</div>
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> Advanced Heart Failure Clinics</div>
-          </div>
-          <button class="btn btn-primary booking-dept-btn" data-speciality="Cardiology">Consult Cardiologist</button>
-        </div>
-        <div class="dept-visual">
-          <svg class="dept-visual-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="40" fill="url(#blue-grad)" opacity="0.15"/>
-            <path d="M30 50H42L46 38L52 62L56 46L60 50H70" stroke="url(#blue-grad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <defs>
-              <linearGradient id="blue-grad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#2563eb"/>
-                <stop offset="1" stop-color="#ec4899"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-      </div>
-
-      <!-- Pediatrics Panel -->
-      <div class="dept-content-panel" id="dept-peds">
-        <div class="dept-info">
-          <h3>Pediatrics & Neonatal Intensive Care (NICU)</h3>
-          <p>Tender care for your little ones. We host a level-IV Neonatal ICU to treat complex newborn medical conditions, managed by specialized neonatologists and pediatric surgeons. Our colorful, stress-free outpatient wings put children at ease during consultations.</p>
-          <div class="dept-features">
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> Level IV Advanced NICU</div>
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> Pediatric Specialist Consults</div>
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> Child Development Clinics</div>
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> Complete Vaccination Care</div>
-          </div>
-          <button class="btn btn-primary booking-dept-btn" data-speciality="Pediatrics">Book Pediatric Visit</button>
-        </div>
-        <div class="dept-visual">
-          <svg class="dept-visual-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="40" fill="url(#purple-grad)" opacity="0.15"/>
-            <path d="M50 35C45 35 41 39 41 44C41 52 50 63 50 63C50 63 59 52 59 44C59 39 55 35 50 35ZM50 48C47.8 48 46 46.2 46 44C46 41.8 47.8 40 50 40C52.2 40 54 41.8 54 44C54 46.2 52.2 48 50 48Z" fill="url(#purple-grad)"/>
-            <defs>
-              <linearGradient id="purple-grad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#8b5cf6"/>
-                <stop offset="1" stop-color="#ec4899"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-      </div>
-
-      <!-- Neurology Panel -->
-      <div class="dept-content-panel" id="dept-neuro">
-        <div class="dept-info">
-          <h3>Neurology & Neurosurgery Center</h3>
-          <p>Advanced mapping and surgical care for complex neurovascular conditions. Utilizing intraoperative MRI, neuro-navigation, and micro-neurosurgery, our department addresses brain stroke emergencies, neuro-oncology, and chronic epilepsy disorders.</p>
-          <div class="dept-features">
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> Stroke Management Unit</div>
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> CyberKnife & Gamma Knife</div>
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> Spine Surgery Center</div>
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> Neuro-ICU Specialized Beds</div>
-          </div>
-          <button class="btn btn-primary booking-dept-btn" data-speciality="Neurology">Consult Neurologist</button>
-        </div>
-        <div class="dept-visual">
-          <svg class="dept-visual-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="40" fill="url(#blue-grad)" opacity="0.12"/>
-            <path d="M50 25C36 25 32 36 32 46C32 54 36 58 40 60C40 65 42 75 50 75C58 75 60 65 60 60C64 58 68 54 68 46C68 36 64 25 50 25Z" stroke="url(#blue-grad)" stroke-width="2"/>
-            <path d="M50 25V75" stroke="url(#blue-grad)" stroke-width="1.5"/>
-            <circle cx="42" cy="40" r="2" fill="#2563eb"/>
-            <circle cx="58" cy="40" r="2" fill="#ec4899"/>
-            <circle cx="45" cy="50" r="2" fill="#8b5cf6"/>
-            <circle cx="55" cy="50" r="2" fill="#2563eb"/>
-          </svg>
-        </div>
-      </div>
-
-      <!-- Orthopedics Panel -->
-      <div class="dept-content-panel" id="dept-ortho">
-        <div class="dept-info">
-          <h3>Orthopedics & Robotic Joint Replacement</h3>
-          <p>Regain painless mobility. Our robotic joint replacement systems enable surgeons to perform hip and knee reconstructions with micro-millimeter precision. Combined with dedicated sports medicine rehabilitation programs, we speed up your recovery journey.</p>
-          <div class="dept-features">
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> Mako Robotic Joint Surgeries</div>
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> Sports Medicine & Arthroscopy</div>
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> Complex Trauma & Fractures</div>
-            <div class="dept-feature-item"><i class="fa-solid fa-circle-check"></i> Post-Op Rehab & Physiotherapy</div>
-          </div>
-          <button class="btn btn-primary booking-dept-btn" data-speciality="Orthopedics">Consult Orthopedic Surgeon</button>
-        </div>
-        <div class="dept-visual">
-          <svg class="dept-visual-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="40" fill="url(#pink-grad)" opacity="0.12"/>
-            <path d="M50 25V65M42 35H58M42 45H58M42 55H58M50 65L42 75M50 65L58 75" stroke="url(#pink-grad)" stroke-width="3" stroke-linecap="round"/>
-          </svg>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- --- Expert Doctors Section --- -->
-  <section class="doctors-section section-padding" id="doctors">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-badge">Expert Faculty</span>
-        <h2 class="section-title">World-Class Doctors & <span class="text-gradient-purple-pink">IVF Specialists</span></h2>
-        <p class="section-desc">Consult with highly decorated medical professionals trained in leading medical institutes globally.</p>
-      </div>
-
-      <div class="doctors-grid">
-        <!-- Doctor 1 -->
-        <div class="doctor-card glass-card reveal">
-          <div class="doctor-image-box">
-            <img src="assets/images/doctor_1.png" alt="Dr. Alexander Vance" class="doctor-img">
-            <div class="doctor-overlay">
-              <a href="#" class="doctor-social"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#" class="doctor-social"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-          </div>
-          <div class="doctor-info">
-            <div class="doctor-dept">Cardiology</div>
-            <h3 class="doctor-name">Dr. Alexander Vance</h3>
-            <p class="doctor-exp">MD, DM (Cardiology) • 18+ Years Exp</p>
-            <button class="doctor-cta booking-doc-btn" data-doctor="Dr. Alexander Vance" data-speciality="Cardiology">Book Appointment</button>
-          </div>
-        </div>
-
-        <!-- Doctor 2 -->
-        <div class="doctor-card glass-card reveal">
-          <div class="doctor-image-box">
+        <div class="doctor-card">
+          <div class="doctor-img-box">
             <img src="assets/images/doctor_2.png" alt="Dr. Evelyn Thorne" class="doctor-img">
-            <div class="doctor-overlay">
-              <a href="#" class="doctor-social"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#" class="doctor-social"><i class="fa-solid fa-envelope"></i></a>
+            <div class="doctor-dept-tag">IVF & Fertility</div>
+            <div class="doctor-social-row">
+              <a class="doc-social" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a class="doc-social" href="#"><i class="fa-solid fa-envelope"></i></a>
+              <a class="doc-social" href="#"><i class="fa-solid fa-phone"></i></a>
             </div>
           </div>
-          <div class="doctor-info">
-            <div class="doctor-dept">IVF & Fertility</div>
-            <h3 class="doctor-name">Dr. Evelyn Thorne</h3>
-            <p class="doctor-exp">MD (Obgyn), Fellowship in IVF • 15+ Years Exp</p>
-            <button class="doctor-cta booking-doc-btn" data-doctor="Dr. Evelyn Thorne" data-speciality="IVF & Fertility">Book Appointment</button>
+          <div class="doctor-body">
+            <div class="doctor-name">Dr. Evelyn Thorne</div>
+            <div class="doctor-spec">Fertility & Reproductive Medicine</div>
+            <div class="doctor-exp"><i class="fa-solid fa-briefcase-medical" style="color:var(--blue-400)"></i> 15+ Years Experience</div>
+            <div class="doctor-rating">
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <span class="rating-num">5.0 (480 reviews)</span>
+            </div>
+            <button class="btn btn-primary btn-sm btn-full" onclick="openBooking('Dr. Evelyn Thorne','IVF & Fertility')">
+              <i class="fa-regular fa-calendar-check"></i> Book Consultation
+            </button>
           </div>
         </div>
 
-        <!-- Doctor 3 -->
-        <div class="doctor-card glass-card reveal">
-          <div class="doctor-image-box">
+        <div class="doctor-card">
+          <div class="doctor-img-box">
             <img src="assets/images/doctor_3.png" alt="Dr. Marcus Sterling" class="doctor-img">
-            <div class="doctor-overlay">
-              <a href="#" class="doctor-social"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#" class="doctor-social"><i class="fa-solid fa-envelope"></i></a>
+            <div class="doctor-dept-tag">Cardiac Surgery</div>
+            <div class="doctor-social-row">
+              <a class="doc-social" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a class="doc-social" href="#"><i class="fa-solid fa-envelope"></i></a>
+              <a class="doc-social" href="#"><i class="fa-solid fa-phone"></i></a>
             </div>
           </div>
-          <div class="doctor-info">
-            <div class="doctor-dept">Cardiovascular Surgery</div>
-            <h3 class="doctor-name">Dr. Marcus Sterling</h3>
-            <p class="doctor-exp">MCh (Cardiothoracic Surgery) • 20+ Years Exp</p>
-            <button class="doctor-cta booking-doc-btn" data-doctor="Dr. Marcus Sterling" data-speciality="Cardiology">Book Appointment</button>
+          <div class="doctor-body">
+            <div class="doctor-name">Dr. Marcus Sterling</div>
+            <div class="doctor-spec">Cardiothoracic Surgeon</div>
+            <div class="doctor-exp"><i class="fa-solid fa-briefcase-medical" style="color:var(--blue-400)"></i> 20+ Years Experience</div>
+            <div class="doctor-rating">
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+              <span class="rating-num">4.8 (290 reviews)</span>
+            </div>
+            <button class="btn btn-primary btn-sm btn-full" onclick="openBooking('Dr. Marcus Sterling','Cardiology')">
+              <i class="fa-regular fa-calendar-check"></i> Book Consultation
+            </button>
           </div>
         </div>
 
-        <!-- Doctor 4 -->
-        <div class="doctor-card glass-card reveal">
-          <div class="doctor-image-box">
+        <div class="doctor-card">
+          <div class="doctor-img-box">
             <img src="assets/images/doctor_4.png" alt="Dr. Sarah Jenkins" class="doctor-img">
-            <div class="doctor-overlay">
-              <a href="#" class="doctor-social"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#" class="doctor-social"><i class="fa-solid fa-envelope"></i></a>
+            <div class="doctor-dept-tag">Pediatrics</div>
+            <div class="doctor-social-row">
+              <a class="doc-social" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a class="doc-social" href="#"><i class="fa-solid fa-envelope"></i></a>
+              <a class="doc-social" href="#"><i class="fa-solid fa-phone"></i></a>
             </div>
           </div>
-          <div class="doctor-info">
-            <div class="doctor-dept">Pediatrics & NICU</div>
-            <h3 class="doctor-name">Dr. Sarah Jenkins</h3>
-            <p class="doctor-exp">MD, DNB (Pediatrics) • 12+ Years Exp</p>
-            <button class="doctor-cta booking-doc-btn" data-doctor="Dr. Sarah Jenkins" data-speciality="Pediatrics">Book Appointment</button>
+          <div class="doctor-body">
+            <div class="doctor-name">Dr. Sarah Jenkins</div>
+            <div class="doctor-spec">Neonatologist & Pediatrician</div>
+            <div class="doctor-exp"><i class="fa-solid fa-briefcase-medical" style="color:var(--blue-400)"></i> 12+ Years Experience</div>
+            <div class="doctor-rating">
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <span class="rating-num">4.9 (410 reviews)</span>
+            </div>
+            <button class="btn btn-primary btn-sm btn-full" onclick="openBooking('Dr. Sarah Jenkins','Pediatrics')">
+              <i class="fa-regular fa-calendar-check"></i> Book Consultation
+            </button>
           </div>
         </div>
+
+        <!-- Dummy extra card -->
+        <div class="doctor-card">
+          <div class="doctor-img-box" style="background:linear-gradient(135deg,#f8faff,#ede9fe);display:flex;align-items:center;justify-content:center;">
+            <div style="text-align:center;padding:2rem;">
+              <div style="width:90px;height:90px;border-radius:50%;background:var(--grad-primary);display:flex;align-items:center;justify-content:center;font-size:2.5rem;color:#fff;margin:0 auto 1rem;">
+                <i class="fa-solid fa-user-plus"></i>
+              </div>
+              <div style="font-family:'Outfit',sans-serif;font-weight:700;color:var(--slate-700)">View All Doctors</div>
+            </div>
+            <div class="doctor-dept-tag">+ 245 More</div>
+          </div>
+          <div class="doctor-body">
+            <div class="doctor-name">Explore All Specialists</div>
+            <div class="doctor-spec">250+ Doctors Across 50+ Departments</div>
+            <div class="doctor-exp"><i class="fa-solid fa-globe" style="color:var(--blue-400)"></i> International & National Expertise</div>
+            <div class="doctor-rating">
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <span class="rating-num">4.9 Average Rating</span>
+            </div>
+            <button class="btn btn-outline btn-sm btn-full" onclick="openBooking()">
+              <i class="fa-solid fa-search"></i> Find My Doctor
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- --- Statistics Counter Section --- -->
-  <section class="stats-section" id="stats">
-    <div class="container">
-      <div class="stats-grid">
-        <!-- Stat Item 1 -->
-        <div class="stat-item">
-          <div class="stat-number text-gradient-blue-pink" data-target="99">0</div>
-          <div class="stat-label">Success Rate (%)</div>
-        </div>
-        <!-- Stat Item 2 -->
-        <div class="stat-item">
-          <div class="stat-number text-gradient-purple-pink" data-target="120000">0</div>
-          <div class="stat-label">Happy Patients</div>
-        </div>
-        <!-- Stat Item 3 -->
-        <div class="stat-item">
-          <div class="stat-number text-gradient-blue-pink" data-target="150">0</div>
-          <div class="stat-label">Expert Doctors</div>
-        </div>
-        <!-- Stat Item 4 -->
-        <div class="stat-item">
-          <div class="stat-number text-gradient-purple-pink" data-target="80">0</div>
-          <div class="stat-label">Critical ICU Beds</div>
-        </div>
-      </div>
+<!-- ════════════════════════════════════════════
+     7. SUCCESS STORIES
+════════════════════════════════════════════ -->
+<section id="stories" class="section-py">
+  <div class="stories-bg-glow glow-1"></div>
+  <div class="stories-bg-glow glow-2"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="sec-header reveal">
+      <span class="sec-eyebrow"><i class="fa-solid fa-star"></i> Patient Stories</span>
+      <h2 class="sec-title">Journeys That <span style="background:linear-gradient(90deg,#93c5fd,#f0abfc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Changed Lives</span></h2>
+      <p class="sec-desc">Real stories of hope, resilience, and medical triumph — from thousands of patients who trusted Kimaya.</p>
     </div>
-  </section>
 
-  <!-- --- Patient Success Stories Section --- -->
-  <section class="stories-section section-padding" id="stories">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-badge">Success Stories</span>
-        <h2 class="section-title">Celebrating Life & <span class="text-gradient-purple-pink">Triumphant Recovery</span></h2>
-        <p class="section-desc">Read how our experts transformed lives, helping patients recover from complex ailments and experience the gift of parenthood.</p>
-      </div>
+    <div class="stories-slider reveal">
+      <div class="stories-track" id="stories-track">
 
-      <!-- Testimonial / Story Slider -->
-      <div class="stories-slider-container reveal">
-        <div class="stories-slider">
-          <div class="story-track" id="story-track">
-            <!-- Slide 1 -->
-            <div class="story-slide">
-              <div class="story-card-grid">
-                <div class="story-img-box">
-                  <img src="assets/images/patient_story_1.png" alt="Happy family celebrating baby success">
-                </div>
-                <div class="story-content">
-                  <span class="story-quote-icon">“</span>
-                  <h3 class="story-title">A Miracle IVF Journey After 8 Years of Hope</h3>
-                  <p class="story-text">
-                    "After multiple failed treatments elsewhere, Dr. Evelyn Thorne and the embryology team at Medilux designed a personalized laser-assisted protocol. Today, we hold our beautiful daughter in our arms. The care was luxury, the clinical expertise unmatched, and the emotional support got us through."
-                  </p>
-                  <div class="story-author">
-                    <div class="author-avatar">MS</div>
-                    <div>
-                      <h4 class="author-name">Meera & Siddharth Sharma</h4>
-                      <span class="author-treatment">IVF & Fertility Patient</span>
-                    </div>
-                  </div>
+        <!-- Slide 1 -->
+        <div class="story-slide">
+          <div class="story-inner">
+            <div class="story-img-wrap">
+              <img src="assets/images/patient_story_1.png" alt="IVF Success Story">
+              <div class="story-img-overlay"></div>
+              <div class="story-label">IVF Success Story</div>
+            </div>
+            <div class="story-content">
+              <div class="story-quote">"</div>
+              <p class="story-text">After 7 years of heartbreak and failed cycles elsewhere, Kimaya's team designed a protocol that worked on our very first attempt here. Dr. Thorne's expertise, the state-of-the-art embryology lab, and the emotional support from the entire team made this impossible dream possible.</p>
+              <div class="story-author">
+                <div class="story-avatar">PR</div>
+                <div>
+                  <div class="story-author-name">Priya & Rahul Mehta</div>
+                  <div class="story-author-type">IVF Success – Happy Parents of Twins</div>
                 </div>
               </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="story-slide">
-              <div class="story-card-grid">
-                <div class="story-img-box">
-                  <img src="assets/images/hero_bg.png" alt="Cardiology Success Recovery">
-                </div>
-                <div class="story-content">
-                  <span class="story-quote-icon">“</span>
-                  <h3 class="story-title">Saved in the Golden Hour of Cardiac Arrest</h3>
-                  <p class="story-text">
-                    "When my husband collapsed with a major blockage, the Medilux mobile ICU ambulance arrived within 10 minutes, initiating critical treatment on wheels. Dr. Vance completed a complex primary angioplasty immediately. We owe his life to their rapid response and state-of-the-art facilities."
-                  </p>
-                  <div class="story-author">
-                    <div class="author-avatar">KP</div>
-                    <div>
-                      <h4 class="author-name">Kavitha & Prasad Roy</h4>
-                      <span class="author-treatment">Emergency Cardiology Patient</span>
-                    </div>
-                  </div>
-                </div>
+              <div class="story-ctas">
+                <button class="btn btn-primary" onclick="openBooking()"><i class="fa-regular fa-calendar-check"></i> Start Your Journey</button>
+                <button class="btn btn-glass">Read Full Story <i class="fa-solid fa-arrow-right"></i></button>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Slider Navigation Controls -->
-        <div class="slider-controls">
-          <button class="slider-btn" id="prev-story" aria-label="Previous Story">
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
-          <div class="slider-dots" id="slider-dots">
-            <span class="slider-dot active" data-index="0"></span>
-            <span class="slider-dot" data-index="1"></span>
-          </div>
-          <button class="slider-btn" id="next-story" aria-label="Next Story">
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- --- Health Packages Section --- -->
-  <section class="packages-section section-padding" id="packages">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-badge">Health Wellness</span>
-        <h2 class="section-title">Personalized Luxury <span class="text-gradient-blue-pink">Health Assessment Packages</span></h2>
-        <p class="section-desc">Invest in preventive care. Get diagnostic check-ups matching global laboratory standards under luxury outpatient care.</p>
-      </div>
-
-      <div class="packages-grid">
-        <!-- Package 1 -->
-        <div class="package-card glass-card reveal">
-          <h3 class="package-name">Lux Basic Wellness</h3>
-          <div class="package-price">₹4,999 <span>/ Person</span></div>
-          <p class="package-desc">Perfect entry-level screening for vital organs, blood parameters, and doctor consultations.</p>
-          <div class="package-divider"></div>
-          <ul class="package-features">
-            <li class="package-feature"><i class="fa-solid fa-check"></i> 52 Vital Lab Tests</li>
-            <li class="package-feature"><i class="fa-solid fa-check"></i> Complete CBC, Lipid Profile</li>
-            <li class="package-feature"><i class="fa-solid fa-check"></i> Kidney & Liver Function Tests</li>
-            <li class="package-feature"><i class="fa-solid fa-check"></i> Physician Consultation</li>
-          </ul>
-          <button class="btn btn-secondary package-btn open-booking-pkg" data-pkg="Lux Basic Wellness">Select Package</button>
-        </div>
-
-        <!-- Package 2 -->
-        <div class="package-card glass-card popular reveal">
-          <div class="popular-badge">Most Popular</div>
-          <h3 class="package-name">Executive Elite Care</h3>
-          <div class="package-price">₹12,499 <span>/ Person</span></div>
-          <p class="package-desc">Comprehensive screening with cardiac stress markers, ultrasounds, and expert specialist consults.</p>
-          <div class="package-divider"></div>
-          <ul class="package-features">
-            <li class="package-feature"><i class="fa-solid fa-check"></i> 84 Premium Lab Tests</li>
-            <li class="package-feature"><i class="fa-solid fa-check"></i> Cardiac Echo & TMT</li>
-            <li class="package-feature"><i class="fa-solid fa-check"></i> Whole Abdomen Ultrasound</li>
-            <li class="package-feature"><i class="fa-solid fa-check"></i> Senior Cardiology Consult</li>
-          </ul>
-          <button class="btn btn-primary package-btn open-booking-pkg" data-pkg="Executive Elite Care">Select Package</button>
-        </div>
-
-        <!-- Package 3 -->
-        <div class="package-card glass-card reveal">
-          <h3 class="package-name">Elite Fertility / IVF Check</h3>
-          <div class="package-price">₹15,999 <span>/ Couple</span></div>
-          <p class="package-desc">Specialized reproductive health profiling, hormone panels, and IVF embryologist screening.</p>
-          <div class="package-divider"></div>
-          <ul class="package-features">
-            <li class="package-feature"><i class="fa-solid fa-check"></i> Advanced Hormone Assays (AMH)</li>
-            <li class="package-feature"><i class="fa-solid fa-check"></i> Pelvic Ultrasound & Follicular check</li>
-            <li class="package-feature"><i class="fa-solid fa-check"></i> Semen Analysis & Profile</li>
-            <li class="package-feature"><i class="fa-solid fa-check"></i> IVF Specialist Consultation</li>
-          </ul>
-          <button class="btn btn-secondary package-btn open-booking-pkg" data-pkg="Elite Fertility Check">Select Package</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- --- Testimonials Section --- -->
-  <section class="testimonials-section section-padding">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-badge">Client Words</span>
-        <h2 class="section-title">What Our Patients Say <span class="text-gradient-purple-pink">About Our Quality</span></h2>
-        <p class="section-desc">Hear directly from individuals who experienced clinical healing combined with luxury hospitality at our premises.</p>
-      </div>
-
-      <div class="testimonials-grid">
-        <!-- Testimonial 1 -->
-        <div class="testimonial-card glass-card reveal">
-          <div class="testimonial-header">
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+        <!-- Slide 2 -->
+        <div class="story-slide">
+          <div class="story-inner">
+            <div class="story-img-wrap">
+              <img src="assets/images/hero_bg.png" alt="Cardiac Emergency Story">
+              <div class="story-img-overlay"></div>
+              <div class="story-label">Emergency Cardiac Care</div>
             </div>
-            <i class="fa-solid fa-quote-right" style="opacity: 0.1; font-size: 1.5rem;"></i>
-          </div>
-          <p class="testimonial-text">
-            "The hospitality felt more like a five-star luxury hotel than a traditional hospital. The nurses were incredibly soft-spoken, the suites spacious, and everything was handled digitallly. Truly a premium healthcare model."
-          </p>
-          <div class="testimonial-user">
-            <div class="user-avatar">AD</div>
-            <div class="user-info">
-              <h4>Amit Deshmukh</h4>
-              <p>Executive Suite Patient</p>
+            <div class="story-content">
+              <div class="story-quote">"</div>
+              <p class="story-text">My husband collapsed with a sudden emergency at 11 PM. The Kimaya emergency care team was at our door in 9 minutes. By the time they reached the clinic, the medical specialists were already prepared. Today, my husband is back to his active life. Kimaya gave him back.</p>
+              <div class="story-author">
+                <div class="story-avatar">SW</div>
+                <div>
+                  <div class="story-author-name">Sunita & Vijay Walawalkar</div>
+                  <div class="story-author-type">Emergency Angioplasty – Full Recovery</div>
+                </div>
+              </div>
+              <div class="story-ctas">
+                <button class="btn btn-primary" onclick="openBooking()"><i class="fa-regular fa-calendar-check"></i> Emergency Consultation</button>
+                <button class="btn btn-glass">Read Full Story <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Testimonial 2 -->
-        <div class="testimonial-card glass-card reveal">
-          <div class="testimonial-header">
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <i class="fa-solid fa-quote-right" style="opacity: 0.1; font-size: 1.5rem;"></i>
-          </div>
-          <p class="testimonial-text">
-            "We visited Dr. Evelyn Thorne for a fertility checkup. The discretion, advanced explanation of reproductive science, and state-of-the-art embryology labs immediately filled us with confidence. We highly recommend Medilux."
-          </p>
-          <div class="testimonial-user">
-            <div class="user-avatar">SN</div>
-            <div class="user-info">
-              <h4>Sneha Nambiar</h4>
-              <p>Fertility Consultation</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonial 3 -->
-        <div class="testimonial-card glass-card reveal">
-          <div class="testimonial-header">
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <i class="fa-solid fa-quote-right" style="opacity: 0.1; font-size: 1.5rem;"></i>
-          </div>
-          <p class="testimonial-text">
-            "Medilux emergency services saved my father's life during a sudden heart stroke. The surgical team acted within seconds of arrival. Words cannot express our family's gratitude. Truly the best cardiovascular institute."
-          </p>
-          <div class="testimonial-user">
-            <div class="user-avatar">RK</div>
-            <div class="user-info">
-              <h4>Rajesh Kumar</h4>
-              <p>Cardiology Patient’s Son</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- --- Modern Footer Section --- -->
-  <footer class="footer" id="contact">
-    <div class="container">
-      <div class="footer-top">
-        <!-- Column 1: Brand -->
-        <div class="footer-brand">
-          <a href="#" class="logo">
-            <div class="logo-icon">M</div>
-            <div class="logo-text">MediLux<span>Care</span></div>
-          </a>
-          <p>Delivering high-end luxury hospitality combined with cutting-edge medical technologies. Redefining premium health and wellness care.</p>
-          <div class="social-links">
-            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          </div>
-        </div>
-
-        <!-- Column 2: Departments -->
-        <div>
-          <h3 class="footer-title">Departments</h3>
-          <ul class="footer-links">
-            <li><a href="#departments">IVF & Reproductive Medicine</a></li>
-            <li><a href="#departments">Cardiology & Cardiac Surgery</a></li>
-            <li><a href="#departments">Pediatrics & Neonatology</a></li>
-            <li><a href="#departments">Neurology & Neuro-Surgery</a></li>
-            <li><a href="#departments">Robotic Orthopedics</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 3: Quick Links -->
-        <div>
-          <h3 class="footer-title">Quick Links</h3>
-          <ul class="footer-links">
-            <li><a href="#about">About Our Hospital</a></li>
-            <li><a href="#doctors">Our Specialist Doctors</a></li>
-            <li><a href="#packages">Health Check Packages</a></li>
-            <li><a href="#stories">Successful Treatments</a></li>
-            <li><a href="#contact">Emergency Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 4: Newsletter & Contact -->
-        <div>
-          <h3 class="footer-title">Subscribe to Health Newsletter</h3>
-          <p style="font-size: 0.88rem; margin-bottom: 1rem;">Get luxury health tips and modern clinical announcements.</p>
-          <form class="newsletter-form" id="newsletter-form">
-            <input type="email" placeholder="Your Email Address" class="newsletter-input" required>
-            <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
-          </form>
-          
-          <ul class="footer-contact" style="margin-top: 2rem;">
-            <li><i class="fa-solid fa-location-dot"></i> 101, Luxury Boulevard, Medical Zone, City, India</li>
-            <li><i class="fa-solid fa-envelope"></i> contact@mediluxcare.com</li>
-          </ul>
-        </div>
       </div>
 
-      <!-- Footer Bottom -->
-      <div class="footer-bottom">
-        <p>&copy; 2026 Medilux Care Hospital. All rights reserved.</p>
-        <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-          <a href="#">Patient Rights</a>
+      <div class="slider-nav">
+        <button class="sldr-btn" id="story-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="sldr-dots" id="story-dots">
+          <span class="sldr-dot active" data-i="0"></span>
+          <span class="sldr-dot" data-i="1"></span>
         </div>
+        <button class="sldr-btn" id="story-next"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
-    </div>
-  </footer>
-
-  <!-- --- Floating Widgets --- -->
-  <div class="floating-widgets">
-    <!-- WhatsApp Floating support -->
-    <a href="https://wa.me/919999999999" target="_blank" class="floating-btn float-whatsapp" aria-label="Chat on WhatsApp">
-      <i class="fa-brands fa-whatsapp"></i>
-    </a>
-    <!-- Live Chat widget bubble -->
-    <div class="floating-btn float-chat" id="live-chat-bubble" aria-label="Open Chat Support">
-      <i class="fa-regular fa-comment-dots"></i>
     </div>
   </div>
+</section>
 
-  <!-- Live Chat Support Window -->
-  <div class="chat-window" id="chat-window">
-    <div class="chat-header">
-      <div class="chat-header-info">
-        <div class="chat-agent-avatar">ML</div>
-        <div>
-          <div class="chat-header-title">MediLux Support</div>
-          <div class="chat-header-subtitle">Online • Care Specialist</div>
+<!-- ════════════════════════════════════════════
+     10. FOOTER
+════════════════════════════════════════════ -->
+  <div class="container">
+    <div class="sec-header reveal">
+      <span class="sec-eyebrow"><i class="fa-solid fa-box-heart"></i> Health Packages</span>
+      <h2 class="sec-title">Invest in Your <span class="grad-text-blue">Preventive Wellness</span></h2>
+      <p class="sec-desc">Comprehensive health assessments designed by our senior specialists — because prevention is always better than cure.</p>
+    </div>
+    <div class="packages-grid">
+
+      <div class="pkg-card reveal">
+        <div class="pkg-icon"><i class="fa-solid fa-heart"></i></div>
+        <h3>Full Body Checkup</h3>
+        <p>Complete 70+ parameter screening covering all vital organs, blood panels, and specialist review.</p>
+        <div class="pkg-price"><strong>₹3,999</strong> <span>/ person</span></div>
+        <div class="pkg-divider"></div>
+        <ul class="pkg-features">
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> 70+ Lab Tests (CBC, LFT, KFT)</li>
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> Chest X-Ray & ECG</li>
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> Physician Consultation</li>
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> Same-Day Digital Reports</li>
+        </ul>
+        <button class="btn btn-outline btn-full" onclick="openBooking('','','Full Body Checkup')">Book Package</button>
+      </div>
+
+      <div class="pkg-card featured reveal reveal-delay-1">
+        <div class="pkg-badge">⭐ Most Popular</div>
+        <div class="pkg-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+        <h3>Heart Care Elite</h3>
+        <p>Comprehensive cardiac assessment with advanced echo, stress test, and senior cardiologist review.</p>
+        <div class="pkg-price"><strong>₹9,999</strong> <span>/ person</span></div>
+        <div class="pkg-divider"></div>
+        <ul class="pkg-features">
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> Echocardiography (Echo)</li>
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> TMT Stress Test</li>
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> 24-hr Holter Monitor</li>
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> Senior Cardiologist Consult</li>
+        </ul>
+        <button class="btn btn-primary btn-full" onclick="openBooking('','Cardiology','Heart Care Elite')">Book Package</button>
+      </div>
+
+      <div class="pkg-card reveal reveal-delay-2">
+        <div class="pkg-icon"><i class="fa-solid fa-venus"></i></div>
+        <h3>Women's Wellness Pro</h3>
+        <p>Specialized health screening for women including hormonal, gynecological, and breast health evaluation.</p>
+        <div class="pkg-price"><strong>₹7,499</strong> <span>/ person</span></div>
+        <div class="pkg-divider"></div>
+        <ul class="pkg-features">
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> Mammography & Pelvic USG</li>
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> Hormone Panel (Thyroid, FSH)</li>
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> Pap Smear & Bone Density</li>
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> Gynaecologist Consultation</li>
+        </ul>
+        <button class="btn btn-outline btn-full" onclick="openBooking('','','Women Wellness Pro')">Book Package</button>
+      </div>
+
+      <div class="pkg-card reveal reveal-delay-1">
+        <div class="pkg-icon"><i class="fa-solid fa-droplet"></i></div>
+        <h3>Diabetes Care360</h3>
+        <p>Complete diabetes management program with monitoring, diet counselling, and specialist follow-up plan.</p>
+        <div class="pkg-price"><strong>₹5,499</strong> <span>/ person</span></div>
+        <div class="pkg-divider"></div>
+        <ul class="pkg-features">
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> HbA1c & Fasting / PP Sugar</li>
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> Kidney & Neuropathy Screen</li>
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> Eye & Foot Diabetic Exam</li>
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> Endocrinologist Review</li>
+        </ul>
+        <button class="btn btn-outline btn-full" onclick="openBooking('','','Diabetes Care360')">Book Package</button>
+      </div>
+
+      <div class="pkg-card reveal reveal-delay-2">
+        <div class="pkg-icon"><i class="fa-solid fa-baby-carriage"></i></div>
+        <h3>Fertility Readiness</h3>
+        <p>Comprehensive fertility profiling for couples — hormones, genetics, imaging, and IVF readiness assessment.</p>
+        <div class="pkg-price"><strong>₹14,999</strong> <span>/ couple</span></div>
+        <div class="pkg-divider"></div>
+        <ul class="pkg-features">
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> AMH, FSH, LH, Estradiol Panel</li>
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> Semen Analysis & Morphology</li>
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> 3D Pelvic Ultrasound</li>
+          <li class="pkg-feature"><i class="fa-solid fa-check"></i> IVF Specialist Consultation</li>
+        </ul>
+        <button class="btn btn-outline btn-full" onclick="openBooking('','IVF & Fertility','Fertility Readiness')">Book Package</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     10. FOOTER
+════════════════════════════════════════════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:1.5rem;">
+          <img src="assets/images/logo.svg" alt="Kimaya Logo" class="footer-logo-img">
+        </div>
+        <p class="footer-about">Redefining premium gynecological, obstetric, and fertility care through advanced medical sciences, state-of-the-art embryology labs, and a deeply compassionate approach to parenting journeys.</p>
+        <div class="footer-social">
+          <a href="#" class="f-social" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="f-social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="f-social" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="f-social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="f-social" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </div>
-      <button class="chat-close-btn" id="close-chat-btn"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-    <div class="chat-body" id="chat-body">
-      <div class="chat-msg msg-bot">
-        Hello! Welcome to Medilux Care. How can our medical care specialists assist you today?
+
+      <!-- Departments -->
+      <div>
+        <h4 class="footer-col-title">Departments</h4>
+        <ul class="footer-links">
+          <li><a href="#departments">IVF & Fertility</a></li>
+          <li><a href="#departments">Cardiology</a></li>
+          <li><a href="#departments">Neurology</a></li>
+          <li><a href="#departments">Orthopedics</a></li>
+          <li><a href="#departments">Oncology</a></li>
+          <li><a href="#departments">Pediatrics</a></li>
+          <li><a href="#departments">Emergency Care</a></li>
+          <li><a href="#departments">Radiology</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="chat-footer">
-      <input type="text" placeholder="Type message..." class="chat-input" id="chat-input">
-      <button class="chat-send-btn" id="chat-send-btn"><i class="fa-solid fa-paper-plane"></i></button>
-    </div>
-  </div>
 
-  <!-- --- Search Overlay Modal --- -->
-  <div class="search-overlay" id="search-overlay">
-    <div class="search-box-container">
-      <button class="search-close" id="close-search-btn"><i class="fa-solid fa-xmark"></i></button>
-      <input type="text" class="search-input-field" placeholder="Search for doctors, treatments, health packages...">
-    </div>
-  </div>
-
-  <!-- --- Booking Appointment Modal --- -->
-  <div class="booking-modal-overlay" id="booking-modal">
-    <div class="booking-modal-card">
-      <div class="booking-modal-header">
-        <button class="booking-modal-close" id="close-booking-btn" aria-label="Close Appointment Modal">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-        <h2 class="booking-modal-title">Schedule Appointment</h2>
-        <p class="booking-modal-subtitle">Enter details to secure your priority consultation at MediLux Care.</p>
+      <!-- Quick Links -->
+      <div>
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#about-section">About Kimaya</a></li>
+          <li><a href="#doctors">Our Doctors</a></li>
+          <li><a href="#packages">Health Packages</a></li>
+          <li><a href="#stories">Patient Stories</a></li>
+          <li><a href="#appointment">Book Appointment</a></li>
+          <li><a href="#">Video Consultation</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Media & Press</a></li>
+        </ul>
       </div>
-      
-      <div class="booking-modal-body">
-        <form class="booking-form" id="appointment-form">
-          <!-- Doctor selection -->
-          <div>
-            <label class="form-label" for="book-doctor">Select Specialist</label>
-            <select class="form-input" id="book-doctor" required>
-              <option value="">Choose a Doctor...</option>
-              <option value="Dr. Alexander Vance">Dr. Alexander Vance (Cardiology)</option>
-              <option value="Dr. Evelyn Thorne">Dr. Evelyn Thorne (IVF & Fertility)</option>
-              <option value="Dr. Marcus Sterling">Dr. Marcus Sterling (Cardiovascular)</option>
-              <option value="Dr. Sarah Jenkins">Dr. Sarah Jenkins (Pediatrics)</option>
-              <option value="General Consultation">General Duty Physician</option>
-            </select>
-          </div>
 
-          <!-- Speciality selection -->
-          <div>
-            <label class="form-label" for="book-speciality">Department</label>
-            <select class="form-input" id="book-speciality" required>
-              <option value="">Choose a Speciality...</option>
-              <option value="IVF & Fertility">IVF & Fertility</option>
-              <option value="Cardiology">Cardiology</option>
-              <option value="Pediatrics">Pediatrics</option>
-              <option value="Neurology">Neurology</option>
-              <option value="Orthopedics">Orthopedics</option>
-            </select>
-          </div>
-
-          <!-- Patient Name -->
-          <div>
-            <label class="form-label" for="book-name">Patient Full Name</label>
-            <input type="text" class="form-input" id="book-name" placeholder="John Doe" required>
-          </div>
-
-          <!-- Phone Number -->
-          <div>
-            <label class="form-label" for="book-phone">Contact Number</label>
-            <input type="tel" class="form-input" id="book-phone" placeholder="+91 99887 76655" required>
-          </div>
-
-          <!-- Preferred Date -->
-          <div>
-            <label class="form-label" for="book-date">Preferred Date</label>
-            <input type="date" class="form-input" id="book-date" required>
-          </div>
-
-          <!-- Preferred Time -->
-          <div>
-            <label class="form-label" for="book-time">Preferred Slot</label>
-            <select class="form-input" id="book-time" required>
-              <option value="">Select Time Slot...</option>
-              <option value="09:00 AM - 12:00 PM">Morning (09:00 AM - 12:00 PM)</option>
-              <option value="12:00 PM - 03:00 PM">Afternoon (12:00 PM - 03:00 PM)</option>
-              <option value="03:00 PM - 06:00 PM">Evening (03:00 PM - 06:00 PM)</option>
-            </select>
-          </div>
-
-          <!-- Selected Health Package (if any) -->
-          <div class="form-group-full">
-            <label class="form-label" for="book-package">Selected Wellness Package (Optional)</label>
-            <select class="form-input" id="book-package">
-              <option value="None">None</option>
-              <option value="Lux Basic Wellness">Lux Basic Wellness (₹4,999)</option>
-              <option value="Executive Elite Care">Executive Elite Care (₹12,499)</option>
-              <option value="Elite Fertility Check">Elite Fertility Check (₹15,999)</option>
-            </select>
-          </div>
-
-          <!-- Notes -->
-          <div class="form-group-full">
-            <label class="form-label" for="book-notes">Brief Medical Symptoms / Comments</label>
-            <textarea class="form-input" id="book-notes" rows="3" placeholder="Please describe any symptoms or history..."></textarea>
-          </div>
-
-          <div class="booking-form-submit">
-            <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Appointment Request</button>
-          </div>
-
-          <!-- Submission Confirmation Screen inside form -->
-          <div class="submit-success-msg" id="submit-success-msg">
-            <i class="fa-solid fa-circle-check" style="color: var(--med-blue);"></i>
-            <h3>Appointment Request Submitted!</h3>
-            <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">Thank you. A MediLux Care concierge will call you on the registered contact number within 15 minutes to confirm your final consultation time slot.</p>
-          </div>
+      <!-- Contact & Newsletter -->
+      <div>
+        <h4 class="footer-col-title">Contact Us</h4>
+        <ul class="footer-contact-items" style="margin-bottom:2rem;">
+          <li class="f-contact-item"><i class="fa-solid fa-location-dot"></i> <span>Kimaya Clinic, Medical District, Mumbai – 400001, India</span></li>
+          <li class="f-contact-item"><i class="fa-solid fa-phone-flip"></i> <span>Emergency: <a href="tel:+18001800999" style="color:rgba(255,255,255,.7);">1800-1800-999</a></span></li>
+          <li class="f-contact-item"><i class="fa-solid fa-envelope"></i> <span>care@kimayafertility.com</span></li>
+          <li class="f-contact-item"><i class="fa-solid fa-clock"></i> <span>Emergency: 24/7 | OPD: 8 AM – 8 PM</span></li>
+        </ul>
+        <h4 class="footer-col-title">Health Newsletter</h4>
+        <p class="footer-newsletter" style="font-size:.88rem;color:rgba(255,255,255,.5);margin-bottom:1rem;">Get wellness tips and clinical updates from our specialists.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email address" required>
+          <button type="submit" class="newsletter-submit">Subscribe</button>
         </form>
       </div>
     </div>
-  </div>
 
-  <!-- JavaScript file -->
-  <script src="app.js"></script>
+    <div class="footer-bottom">
+      <p>© 2026 Kimaya Gynec and Fertility Center. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Patient Rights</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ════════════════════════════════════════════
+     FLOATING WIDGETS
+════════════════════════════════════════════ -->
+<div class="floating-widgets">
+  <div class="fw-btn fw-emergency fw-pulse" onclick="window.location.href='tel:+18001800999'">
+    <i class="fa-solid fa-phone"></i>
+    <div class="fw-tooltip">Emergency: 1800-1800-999</div>
+  </div>
+  <a href="https://wa.me/919999999999" target="_blank" class="fw-btn fw-whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <div class="fw-tooltip">WhatsApp Us</div>
+  </a>
+  <div class="fw-btn fw-chat" id="chat-toggle">
+    <i class="fa-regular fa-comment-dots"></i>
+    <div class="fw-tooltip">Live Support</div>
+  </div>
+</div>
+
+<!-- Chat Widget -->
+<div class="chat-widget" id="chat-widget">
+  <div class="chat-head">
+    <div class="chat-head-left">
+      <div class="chat-avatar-wrap" style="background:#bfa36c;">
+        Ki
+        <div class="chat-online-dot"></div>
+      </div>
+      <div>
+        <div class="chat-title">Kimaya Support</div>
+        <div class="chat-subtitle">Typically replies instantly</div>
+      </div>
+    </div>
+    <button class="chat-close" id="chat-close"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="chat-messages" id="chat-messages">
+    <div class="chat-bubble bot">👋 Welcome to Kimaya Gynec and Fertility Center! How can our care specialists help you today?</div>
+    <div class="chat-bubble bot">You can ask about: appointments, doctors, IVF, cardiology, emergency, or health packages.</div>
+  </div>
+  <div class="chat-foot">
+    <input class="chat-inp" id="chat-inp" type="text" placeholder="Type your message...">
+    <button class="chat-send" id="chat-send"><i class="fa-solid fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<!-- Search Modal -->
+<div class="search-modal" id="search-modal">
+  <div class="search-modal-inner">
+    <div class="search-field-wrap">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input class="search-field" id="search-field" type="text" placeholder="Search doctors, treatments, departments…">
+      <button class="search-close-btn" id="search-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="search-hints">
+      <span class="search-hint">IVF Treatment</span>
+      <span class="search-hint">Cardiology</span>
+      <span class="search-hint">Book Appointment</span>
+      <span class="search-hint">Dr. Evelyn Thorne</span>
+      <span class="search-hint">Health Packages</span>
+      <span class="search-hint">Emergency</span>
+    </div>
+  </div>
+</div>
+
+<!-- Booking Modal -->
+<div class="booking-modal" id="booking-modal">
+  <div class="booking-card">
+    <div class="booking-header">
+      <h2>Book Your Appointment</h2>
+      <p>Fill in the details below. Our team confirms within 15 minutes.</p>
+      <button class="booking-close" id="booking-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="booking-body">
+      <form class="booking-form" id="booking-form">
+        <div>
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-input" id="bk-name" placeholder="Your full name" required>
+        </div>
+        <div>
+          <label class="form-label">Phone Number</label>
+          <input type="tel" class="form-input" id="bk-phone" placeholder="+91 99999 99999" required>
+        </div>
+        <div>
+          <label class="form-label">Preferred Doctor</label>
+          <select class="form-input" id="bk-doctor">
+            <option value="">Choose Doctor…</option>
+            <option>Dr. Alexander Vance – Cardiology</option>
+            <option>Dr. Evelyn Thorne – IVF & Fertility</option>
+            <option>Dr. Marcus Sterling – Cardiac Surgery</option>
+            <option>Dr. Sarah Jenkins – Pediatrics</option>
+            <option>General Physician</option>
+          </select>
+        </div>
+        <div>
+          <label class="form-label">Department</label>
+          <select class="form-input" id="bk-dept">
+            <option value="">Choose Department…</option>
+            <option>Cardiology</option>
+            <option>IVF & Fertility</option>
+            <option>Neurology</option>
+            <option>Orthopedics</option>
+            <option>Pediatrics</option>
+            <option>Oncology</option>
+            <option>Emergency</option>
+            <option>Radiology</option>
+          </select>
+        </div>
+        <div>
+          <label class="form-label">Preferred Date</label>
+          <input type="date" class="form-input" id="bk-date" required>
+        </div>
+        <div>
+          <label class="form-label">Time Slot</label>
+          <select class="form-input">
+            <option>Morning (9 AM – 12 PM)</option>
+            <option>Afternoon (12 PM – 3 PM)</option>
+            <option>Evening (3 PM – 6 PM)</option>
+          </select>
+        </div>
+        <div class="full">
+          <label class="form-label">Health Package (Optional)</label>
+          <select class="form-input" id="bk-pkg">
+            <option value="">None Selected</option>
+            <option>Full Body Checkup – ₹3,999</option>
+            <option>Heart Care Elite – ₹9,999</option>
+            <option>Women's Wellness Pro – ₹7,499</option>
+            <option>Diabetes Care360 – ₹5,499</option>
+            <option>Fertility Readiness – ₹14,999</option>
+          </select>
+        </div>
+        <div class="full">
+          <label class="form-label">Symptoms / Message</label>
+          <textarea class="form-input" placeholder="Describe your symptoms or reason for visit…" rows="3"></textarea>
+        </div>
+        <div class="booking-submit">
+          <button type="submit" class="btn btn-primary btn-full btn-lg">
+            <i class="fa-solid fa-paper-plane"></i> Confirm Appointment
+          </button>
+        </div>
+        <div class="booking-success" id="booking-success">
+          <i class="fa-solid fa-circle-check"></i>
+          <h3>Appointment Confirmed!</h3>
+          <p>Our concierge will call you within <strong>15 minutes</strong> to finalize your slot.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
