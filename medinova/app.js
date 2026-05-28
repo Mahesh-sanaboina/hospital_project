@@ -1,5 +1,5 @@
 /* ============================================
-   MediNova Advanced Care – App JavaScript
+   Kimaya Gynec and Fertility Center – App JavaScript
    ============================================ */
 
 /* ─── LOADING SCREEN ─────────────────────── */
@@ -304,12 +304,12 @@ chatClose && chatClose.addEventListener('click', () => chatWidget.classList.remo
 const chatResponses = {
   appoint: "To book an appointment, click the 'Book Appointment' button at the top, or call us at 1800-1800-999. Our team confirms within 15 minutes!",
   ivf: "Our IVF program has an 85%+ success rate! Dr. Evelyn Thorne leads our fertility team. Would you like to schedule a consultation?",
-  fertil: "MediNova's fertility centre offers IVF, ICSI, PGT genetic testing, egg freezing and more. Shall I connect you with our fertility specialist?",
-  cardio: "Our cardiology department has a 24/7 cardiac cath lab, robotic surgery, and primary angioplasty services. Emergency cardiac line: 1800-1800-999.",
-  emerg: "Our emergency number is 1800-1800-999. Our mobile ICU responds within 10 minutes. Do you need immediate assistance?",
-  doctor: "We have 250+ specialist doctors. You can search and book directly through the 'Find Doctor' section or I can help you find the right specialist!",
-  package: "We offer several health packages: Full Body Checkup (₹3,999), Heart Care Elite (₹9,999), Women's Wellness (₹7,499), and Fertility Readiness (₹14,999).",
-  default: "Thank you for reaching out to MediNova! Our care team will connect with you shortly. Alternatively, call us anytime on 1800-1800-999."
+  fertil: "Kimaya's fertility centre offers IVF, ICSI, PGT genetic testing, egg freezing and more. Shall I connect you with our fertility specialist?",
+  cardio: "Our advanced care department has diagnostic services, specialist consultations, and emergency support. Emergency line: 1800-1800-999.",
+  emerg: "Our emergency number is 1800-1800-999. Our rapid response team responds immediately. Do you need assistance?",
+  doctor: "We have world-class specialist doctors. You can search and book directly through the 'Find Doctor' section or I can help you find the right specialist!",
+  package: "We offer several health packages: Full Body Checkup (₹3,999), Women's Wellness (₹7,499), and Fertility Readiness (₹14,999).",
+  default: "Thank you for reaching out to Kimaya Gynec and Fertility Center! Our care team will connect with you shortly. Alternatively, call us anytime on 1800-1800-999."
 };
 
 const addChat = (text, type) => {
