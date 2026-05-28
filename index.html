@@ -61,126 +61,76 @@
 <!-- ════════════════════════════════════════════
      2. HERO SECTION
 ════════════════════════════════════════════ -->
-<section id="hero">
-  <!-- Background -->
-  <div class="hero-bg">
-    <img src="assets/images/hero_bg.png" alt="Kimaya Gynec and Fertility Center Environment" class="hero-bg-img">
-    <div class="hero-overlay"></div>
-    <div class="hero-mesh"></div>
-  </div>
-
-  <!-- Animated Particles -->
-  <div class="particle-field" id="particle-field"></div>
-
-  <div class="container hero-container">
+<header class="hero-section" id="about-section">
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+  <div class="container">
     <div class="hero-grid">
-
-      <!-- LEFT: Content -->
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="dot"></span>
-          NABH Certified • #1 Advanced Care Hospital
+      <!-- Left Column: Copy -->
+      <div class="hero-content reveal active">
+        <div class="hero-tag">
+          <i class="fa-solid fa-award"></i>
+          <span>#1 Advanced Care Hospital • NABH Certified</span>
         </div>
-
         <h1 class="hero-title">
           Trusted Care.<br>
-          <span class="accent" style="background: var(--grad-primary); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">Advanced Healing.</span>
+          <span class="grad-text">Advanced Healing.</span>
         </h1>
-
-        <p class="hero-sub">
+        <p class="hero-desc">
           Providing world-class healthcare solutions with advanced technology, expert doctors, and compassionate patient care tailored to every individual's journey.
         </p>
-
-        <div class="hero-trust">
-          <div class="trust-chip"><i class="fa-solid fa-star"></i> 24/7 Emergency</div>
-          <div class="trust-chip"><i class="fa-solid fa-star"></i> Multi-Speciality</div>
-          <div class="trust-chip"><i class="fa-solid fa-star"></i> NABH Certified</div>
-          <div class="trust-chip"><i class="fa-solid fa-star"></i> ISO 9001:2015</div>
-        </div>
-
-        <div class="hero-ctas">
-          <button class="btn btn-primary btn-lg" id="hero-book-btn">
-            <i class="fa-regular fa-calendar-check"></i> Book Appointment
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg" id="hero-book-btn" onclick="openBooking()">
+            <i class="fa-regular fa-calendar-check"></i> Book Consultation
           </button>
-          <a href="#departments" class="btn btn-glass btn-lg">
+          <a href="#departments" class="btn btn-outline btn-lg">
             Explore Departments <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
-
-        <div class="hero-stat-strip">
-          <div class="hero-stat-item">
-            <div class="hero-stat-num">1L+</div>
-            <div class="hero-stat-lbl">Patients Treated</div>
+        <div class="hero-bullets">
+          <div class="hero-bullet-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>24/7 Emergency Care</span>
           </div>
-          <div class="hero-stat-item">
-            <div class="hero-stat-num">250+</div>
-            <div class="hero-stat-lbl">Expert Doctors</div>
+          <div class="hero-bullet-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Multi-Speciality IVF Wing</span>
           </div>
-          <div class="hero-stat-item">
-            <div class="hero-stat-num">50+</div>
-            <div class="hero-stat-lbl">Departments</div>
-          </div>
-          <div class="hero-stat-item">
-            <div class="hero-stat-num">98%</div>
-            <div class="hero-stat-lbl">Success Rate</div>
+          <div class="hero-bullet-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>1 Lakh+ Happy Patients</span>
           </div>
         </div>
       </div>
 
-      <!-- RIGHT: Achievement Card -->
-      <div class="hero-card-wrap">
-        <!-- Floating mini badge top-left -->
-        <div class="float-card float-card-1">
-          <div class="float-card-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-          <div>
-            <div style="font-size:.7rem;opacity:.7;font-weight:500;">Live Monitoring</div>
-            <div>Cardiac ICU Active</div>
-          </div>
+      <!-- Right Column: Visuals & floating elements -->
+      <div class="hero-visual reveal active">
+        <div class="floating-circle circle-1"></div>
+        
+        <!-- Floating medical icons -->
+        <div class="floating-icon-wrapper f-icon-1">
+          <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+        <div class="floating-icon-wrapper f-icon-2">
+          <i class="fa-solid fa-baby"></i>
+        </div>
+        
+        <!-- Glowing Particles container -->
+        <div class="glowing-particle-emitter" id="particle-container"></div>
+
+        <div class="hero-image-wrapper">
+          <img src="assets/images/hero_bg.png" alt="Kimaya Clinic Environment" class="hero-image">
         </div>
 
-        <div class="hero-achievement-card">
-          <div class="achievement-icon">
-            <i class="fa-solid fa-trophy"></i>
-          </div>
-          <div style="font-size:.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--slate-400);margin-bottom:.6rem;">Celebrating</div>
-          <div class="achievement-number">1 LAKH+</div>
-          <div class="achievement-label">Happy Patients</div>
-          <div class="achievement-sub">Across India & International</div>
-
-          <div style="margin-top:2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:1rem;text-align:center;">
-            <div style="background:var(--slate-100);border-radius:16px;padding:1rem .8rem;">
-              <div style="font-family:'Outfit',sans-serif;font-size:1.6rem;font-weight:900;background:var(--grad-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">85%+</div>
-              <div style="font-size:.7rem;color:var(--slate-500);margin-top:.3rem;font-weight:600;">IVF Success Rate</div>
-            </div>
-            <div style="background:var(--slate-100);border-radius:16px;padding:1rem .8rem;">
-              <div style="font-family:'Outfit',sans-serif;font-size:1.6rem;font-weight:900;background:linear-gradient(135deg,#10b981,#059669);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">24/7</div>
-              <div style="font-size:.7rem;color:var(--slate-500);margin-top:.3rem;font-weight:600;">Emergency Care</div>
-            </div>
-          </div>
-
-          <button class="btn btn-primary" style="width:100%;margin-top:2rem;" onclick="openBooking()">
-            <i class="fa-regular fa-calendar-check"></i> Book Consultation
-          </button>
-        </div>
-
-        <!-- Floating mini badge bottom-right -->
-        <div class="float-card float-card-2">
-          <div class="float-card-icon" style="background:linear-gradient(135deg,#22c55e,#16a34a)"><i class="fa-solid fa-baby"></i></div>
-          <div>
-            <div style="font-size:.7rem;opacity:.7;font-weight:500;">This Month</div>
-            <div>48 IVF Successes</div>
-          </div>
+        <!-- Achievement Badge -->
+        <div class="achievement-badge glass-card" style="background: var(--white); border: 1px solid var(--slate-200); box-shadow: var(--shadow-xl);">
+          <span class="badge-num">1 LAKH+</span>
+          <span class="badge-lbl">Happy Patients</span>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- Scroll Cue -->
-  <div class="hero-scroll">
-    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
-    <span>Scroll</span>
-  </div>
-</section>
+</header>
 
 
 <!-- ════════════════════════════════════════════
